@@ -13,6 +13,9 @@ class VoiceTests(unittest.TestCase):
     def test_create_invoice_dispatch(self):
         self.assertEqual(dispatch("create invoice"), "invoice_create")
 
+    def test_show_invoices_dispatch(self):
+        self.assertEqual(dispatch("show invoices"), "invoice_list")
+
     def test_unknown_dispatch(self):
         self.assertEqual(dispatch("delete universe"), "unknown")
 
