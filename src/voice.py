@@ -9,4 +9,6 @@ def dispatch(text: str) -> str:
     command = normalize(text)
     if command == "show balance":
         return "balance"
+    if command == "create invoice":
+        return "invoice_create"
     return "unknown"
