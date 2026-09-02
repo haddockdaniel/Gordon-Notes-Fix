@@ -11,4 +11,6 @@ def dispatch(text: str) -> str:
         return "balance"
     if command == "create invoice":
         return "invoice_create"
+    if command == "show invoices":
+        return "invoice_list"
     return "unknown"
